@@ -7,8 +7,10 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="myPet" scope="prototype"
-          class="com.example.spring_cource.Dog">
+    <bean id="myPet"
+          class="com.example.spring_cource.Dog"
+    init-method="init"
+    destroy-method="destroy">
     </bean>
 
 </beans>
